@@ -3,11 +3,11 @@
 
 ## Dashboard
 A Control dashboard to have control over your products with:
-1- A registeration system 
-2- REST API to fetch products
-3- Search and filtering features
-4- Trash to keep your deleted products
-5- complaints page to get complaints
+- A registeration system 
+- REST API to fetch products
+- Search and filtering features
+- Trash to keep your deleted products
+- complaints page to get complaints
 
 ## LOGIN
 ![image](https://user-images.githubusercontent.com/62671812/172064113-840220b1-75d4-43b6-8e89-ca3de1f1014b.png)

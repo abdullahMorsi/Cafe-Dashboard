@@ -46,10 +46,10 @@ class RegisterController extends Controller
         $user = User::create($attributes);
 
         Auth::login($user);
-        Mail::raw('Test Email', function ($message){
-            $message->to(request('email'))
-                ->subject('Welcome to my misery');
-        });
+//        Mail::raw('Test Email', function ($message){
+//            $message->to(request('email'))
+//                ->subject('Welcome to my misery');
+//        });
         return redirect('/verifyEmail')->with('success', 'Your account has been created');
 
     }

@@ -7,7 +7,7 @@ A Control dashboard to have control over your products with:
 - REST API to fetch products
 - Search and filtering features
 - Trash to keep your deleted products
-- complaints page to get complaints
+- Suggestion page to get opinions
 
 ## LOGIN
 ![image](https://user-images.githubusercontent.com/62671812/172064113-840220b1-75d4-43b6-8e89-ca3de1f1014b.png)

@@ -9,8 +9,6 @@ use App\Http\Controllers\OpinionController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SuggestionController;
-use App\Http\Controllers\Auth\VerificationController;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -57,13 +55,6 @@ route::get('/paymentWay', function (){
 });
 route::get('/bankPayment', [BankController::class, 'create']);
 route::post('/bankPayment', [BankController::class, 'store']);
-
-// Authentication Routes...
-//// Password Reset Routes...
-//$this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
-//$this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');
-//$this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
-//$this->post('password/reset', 'Auth\ResetPasswordController@reset');
 
 Route::get('/settings', function (){
     return view('settings');

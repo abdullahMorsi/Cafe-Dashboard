@@ -1,0 +1,28 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #768389;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4fa3cd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #006ba6;
+}
+a{
+    text-decoration: none;
+    color:$p-black-color;
+    font-size: 14px;
+    &:hover{
+        color:$p-black-color;
+    }
+}

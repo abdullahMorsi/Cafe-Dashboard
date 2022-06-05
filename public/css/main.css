@@ -1,0 +1,386 @@
+.my-container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .my-container input {
+    position: absolute;
+    opacity: 0;
+    z-index: 111;
+    cursor: pointer;
+    height: 24px !important;
+    width: 7% !important;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 13px;
+    width: 13px;
+    background-color: #fff ;
+    margin-top: 9px;
+    border: 1px solid rgba(128, 128, 128, 0.349);
+    margin-top: 19px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .my-container:hover input ~ .checkmark {
+    background-color: #fff ;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .my-container input:checked ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Show the checkmark when checked */
+  .my-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .my-container .checkmark:after {
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid #f47321;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+@media(max-width:1290px){
+    .start form p.login{width:66%}
+}
+@media(max-width:1030px){
+    .start img.logo{top:-26px !important}
+    /* form{width:50% !important;left:24% !important} */
+    .start form p.login{margin-right: 0;}
+}
+@media(max-width:768px){
+    form{top:200px !important}
+}
+@media(max-width:645px){
+    .start img.logo{width:20% !important}
+    form{width:65% !important; left: 16% !important; height: fit-content !important;}
+    .start form p.login{width:100% !important}
+}
+
+@media(max-width:450px){
+    .start img.logo{width:30% !important; right:36%; position: absolute !important;}
+    
+    form{width:90% !important;left:-4% !important;}
+}
+
+.my-container .multi{
+    top:11px !important;
+    width:17% !important;
+    height: 22px !important;
+}
+
+@media(max-width:1274px){
+    .start form .checks .my-container{width:26%}
+}
+@media(max-width:590px){
+    .start form .checks .my-container{width:33%}
+}
+
+
+/* start swiper */
+.carousel-indicators [data-bs-target]{
+  background-color: greenyellow;
+}
+.carousel-inner{padding:10px}
+/* end swiper */
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper{height: 70vh !important;}
+.swiper-slide{width:450px !important; margin-left: 0px !important; background-color: transparent !important;}
+
+.swiper-pagination-clickable .swiper-pagination-bullet{
+  border-radius: 10px;
+  height: 10px;
+  width: 25px;
+  background-color: #29aba4;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  width:35px !important;
+  background-color: #f47321 !important;
+}
+.swiper-slide-active .subscription{
+  border: 1px solid #f47321 !important;
+}
+
+/* sidebar showing and hidden */
+
+@media(max-width:768px){
+  .logo2{display: none;}
+  #bars{
+    display: block;
+  }
+  .circle1{
+    display: none;
+  }
+  .circle2{
+    display: none;
+  }
+  .sidebar{
+    width:50px;
+    padding-right: 7px;
+    z-index: 1111111;
+    overflow: visible;
+    background-color: #ffffff3b;
+  }
+  .sidebar .client-info img{
+    width:37px;
+    height: 37px;
+    margin-right: -5px;
+  }
+  .sidebar .client-info .details{display: none;}
+  .sidebar .mainLinks #mIcon{font-size: 25px;}
+  .sidebar .mainLinks h4{display: none;}
+  .sidebar .mainLinks #sIcon{display: none;}
+
+  .content{width: 100%; z-index: -2;}
+}
+
+.sidebar.active{
+  width:100%;
+  z-index: 1111111;
+  background-color: rgba(255, 255, 255, 0.815);
+  overflow-y: auto;
+}
+.sidebar.active .altLogo{
+  display: block !important;
+  position: fixed;
+  width:110px;
+  right: 36%;
+  top:70px
+}
+.sidebar.active .details{display: block;}
+.sidebar.active h4{display: block; font-size: 22px !important;}
+.sidebar.active #sIcon{display: block;}
+.sidebar.active .client-info img {width:50px; height: 50px;}
+.sidebar.active a{margin-bottom: 12px;}
+.sidebar.active a:hover h4::after {font-size: 24px !important;}
+
+
+@media(max-width:540px){
+  .swiper-slide{width:250px !important ; margin-left: 15px !important;}
+  .content .subscription {height: 290px !important;}
+  .content .subscription .icon {left: 34% !important}
+}
+@media(max-width:1070px){
+  .comments .comment::after{display: none;}
+  .comments .comment::before{display: none;}
+}
+@media(max-width:768px){
+  .comments{width:88% !important}
+}
+
+
+#myInput {
+  background-image: url(/css/searchicon.png);
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 12px 12px 0px;
+  border:none;
+  margin-bottom: -8px;
+  margin-right: 8px;
+  height: 38px;
+  border-radius: 2px;
+  background-color: #fbfbfb;
+  padding-right: 12px;
+  position: relative;
+  width: 300px;
+}
+#myInput::placeholder{
+    color:#9f9c9c;
+    font-size: 12px;
+}
+
+
+
+#mylist {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100px;
+  font-size: 16px;
+  padding: 12px 20px 12px -1px;
+  background-color: #fbfbfb;
+  margin-bottom: -4px;
+  position: relative;
+  width: fit-content;
+  color:#9f9c9c;
+  display: inline-block;
+  margin-right: 15px;
+  border:none;
+}
+#mylist option{
+  color:#9f9c9c;
+}
+#mylist2 {
+  
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px -1px;
+  border: none;
+  background-color: #fbfbfb;
+  margin-bottom: -4px;
+  position: relative;
+  width:120px;
+  color:#9f9c9c;
+  display: inline-block;
+  margin-right: 15px;
+}
+/* @media(max-width:1100px){
+  #mylist{width:50px}
+  #mylist2{width:80px}
+}
+@media(max-width:768px){
+  .table-row p{
+      font-size: 14px;
+  }
+} */
+#mylist2 option{
+  color:#9f9c9c;
+}
+.icon6{
+  position: absolute;
+  right: 87%;
+  top: 14%;
+}
+.icon7{
+  position: absolute;
+  right: 22%;
+  bottom: 57%;
+}
+
+.icon8{
+  position: absolute;
+  left: 6%;
+  top: 27%;
+}
+.icon9{
+  position: absolute;
+  left: 6%;
+  top: 19%;
+}
+.p2{
+  margin-left: 0px !important;
+}
+
+
+@media(max-width:992px){
+  .up{
+    flex-direction: column;
+  }
+}
+
+@media(max-width:1260px){
+  .items{height: fit-content !important;}
+  .item{height: fit-content !important;}
+}
+.form2 {
+  width:100% !important
+}
+@media(max-width:768px){
+  .form2 textarea{
+    width: 100% !important;
+  }
+  .form2 .add {
+    width:45% !important;
+  }
+}
+.form3{
+  width: 100% !important;
+}
+.form4{
+  width:100% !important;
+}
+
+.item1:hover, .item2:hover{
+  
+    background-color:#29aba4;
+    color:#fff;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.13);
+}
+
+.modal{
+  z-index: 999999 !important;
+}
+.iti{width:100% !important;}
+
+.iti__country-list{width:200px !important; transform: translateX(127px) !important;}
+.content {z-index: -2 !important;}
+
+.comment1::before{
+  content: "";
+            width: 94%;
+            height: 1px;
+            background-color: #e6e2e2;
+            position: absolute;
+            top: 272px;
+            left: 30px;
+}
+.modal-backdrop.show{display: none;}
+.modal {top: 50px !important}
+#marker{
+  position: absolute;
+  color:#f47321;
+  left:45%;
+  bottom: 61%;
+}
+@media(max-width: 768px){
+  #marker{left: 4%;}
+}

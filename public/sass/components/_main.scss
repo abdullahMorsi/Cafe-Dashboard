@@ -1,0 +1,115 @@
+.cards{
+    display: flex;
+    justify-content: space-between;
+    .row{width:94%}
+    .card1, .card2{
+        width:98%;
+        height: 160px;
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.13);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        transition: .4s;
+        &:hover{
+            background-color: $h-color;
+        }
+    }
+    .card1{
+        margin-bottom: 20px;
+        .icon{
+            width: 45px;
+            height: 45px;
+            background-color: #e5f5f4;
+            border-radius: 3px;
+            position: relative;
+            opacity: 1;
+            margin-bottom: 17px;
+            svg{
+                position: absolute;
+                font-size: 24px;
+                top: 10px;
+                right: 11px;
+                color:#64c1be;
+                opacity: 1;
+            }
+        }
+        h4{
+            font-weight: 100;
+        }
+        p{
+            color: #808080ab;
+            font-size: 12px;
+            
+        }
+    }
+    
+}
+.card2:hover p{
+    color:#fff
+}
+.card2:hover h4{
+    color:#fff
+}
+
+.card3:hover p{
+    color:#fff
+}
+.card3:hover h4{
+    color:#fff
+}
+.comments{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.13);
+    width:91%;
+    padding:15px;
+    position: relative;
+    margin-bottom: 35px;
+    h4{
+        color:$h-color;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .comment{
+        display: flex;
+        margin-top: 15px;
+        margin-right: 28px;
+        img{
+            width:45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-left: 12px;
+        }
+        p.name{margin-bottom: 0px;}
+        svg{
+            font-size:11px;
+        }
+        p.text{
+            color:rgba(128, 128, 128, 0.637);
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        &::after{
+            content: "";
+            width: 94%;
+            height: 1px;
+            background-color: #e6e2e2;
+            position: absolute;
+            top: 150px;
+            left: 30px;
+        }
+        &::before{
+            content: "";
+            width: 94%;
+            height: 1px;
+            background-color: #e6e2e2;
+            position: absolute;
+            bottom: 15px;
+            left: 30px;
+        }
+        
+    }
+}

@@ -1,0 +1,119 @@
+.opContent{
+    width:92%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.13);
+    padding:20px;
+    position: relative;
+    margin-bottom: 40px;
+    overflow-x: auto;
+    .filters{
+        display: flex;
+        margin-bottom: 40px;
+        min-width: 506px;
+        .filter1{
+            position: relative;
+            margin-left: 70px;
+        }
+        .filter2{position: relative;}
+        svg{color:#b0b0b0}
+        p{
+            display: inline;
+            font-size: 12px;
+        }
+    }
+    .comment{
+        display: flex;
+        margin-top: 15px;
+        margin-right: 15px;
+        img{
+            width:45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-left: 12px;
+        }
+        p.name{margin-bottom: 0px;}
+        svg{
+            font-size:11px;
+        }
+        p.text{
+            color:rgba(128, 128, 128, 0.637);
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        // &::after{
+        //     content: "";
+        //     width: 94%;
+        //     height: 1px;
+        //     background-color: #e6e2e2;
+        //     position: absolute;
+        //     top: 150px;
+        //     left: 30px;
+        // }
+        // &::before{
+        //     content: "";
+        //     width: 94%;
+        //     height: 1px;
+        //     background-color: #e6e2e2;
+        //     position: absolute;
+        //     bottom: 130px;
+        //     left: 30px;
+        // }
+        
+}
+}
+.comment4::after{
+        content: "";
+        width: 94%;
+        height: 1px;
+        background-color: #e6e2e2;
+        position: absolute;
+        top: 195px;
+        left: 30px;
+}
+.comment5::after{
+    content: "";
+    width: 94%;
+    height: 1px;
+    background-color: #e6e2e2;
+    position: absolute;
+    top: 318px;
+    left: 30px;
+}
+.comment6::after{
+    content: "";
+    width: 94%;
+    height: 1px;
+    background-color: #e6e2e2;
+    position: absolute;
+    top: 435px;
+    left: 30px;
+}
+.comment7::after{
+    content: "";
+    width: 94%;
+    height: 1px;
+    background-color: #e6e2e2;
+    position: absolute;
+    top: 550px;
+    left: 30px;
+}
+@media(max-width: 1058px){
+    .comment4::after,.comment5::after,.comment6::after,.comment7::after{
+        display: none;
+    }
+}
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    width:98%;
+    margin-top: 25px;
+    align-items: center;
+    p{
+        font-size: 15px;
+        margin-top: 15px;
+        color: #808080a3;
+    }
+}
+// @media(max-width:900px){
+//     .filters{display: block !important;}
+// }
